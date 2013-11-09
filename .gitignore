@@ -1,0 +1,11 @@
+# Docs #
+########
+docs/generated/
+
+# Binary #
+##########
+bin/
+
+# Clang_complete #
+##################
+#.clang_complete
