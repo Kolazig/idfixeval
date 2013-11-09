@@ -1,14 +1,10 @@
 /**
- *     Filename: graph.hpp
+ *      @file     graph.hpp
+ *      @brief    Represent Data Flow Graph node
  *  
- *  Description:
- *  
- *      Version:  1.0
- *      Created:  31/10/2013
- *     Revision:  none
- *     Compiler:  g++
- *
- *       Author: Nicolas Simon (nicolas.simon88(at)gmail.com)
+ *      @version  0.1
+ *      @date     31/10/2013
+ *      @author   Nicolas "Kolazig" Simon (nicolas.simon88(at)gmail.com)
  */
  
 #ifndef __GRAPH_HPP__
@@ -16,12 +12,12 @@
 
 #include <string>
 #include <iostream>
-#include "utils/nodeGFD.hpp"
+#include "graph/gfd/nodeGFD.hpp"
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/directed_graph.hpp>
 
 struct Node {
-    NodeGFD node;
+    graph::NodeGFD node;
 };
 
 /*struct Node {

@@ -1,25 +1,16 @@
 /**
- *     Filename: main.cc
+ *      @file     main.cc
  *  
- *  Description:
- *  
- *      Version:  1.0
- *      Created:  31/10/2013
- *     Revision:  none
- *     Compiler:  g++
- *
- *       Author: Nicolas Simon (nicolas.simon88(at)gmail.com)
+ *      @version  0.1
+ *      @date     31/10/2013
+ *      @author   Nicolas "Kolazig" Simon (nicolas.simon88(at)gmail.com)
  */
 
 #include <iostream>
 #include <fstream>
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/graphviz.hpp>
-#include "utils/graph.hpp"
-
-//typedef boost::adjacency_list<boost::listS, boost::vecS, boost::directedS,
-//                              boost::property<boost::vertex_index_t, unsigned int>,
-//                              boost::property<boost::edge_weight_t, double> > Graph;
+#include "graph/graph.hpp"
 
 int main(int argc, const char *argv[])
 {
