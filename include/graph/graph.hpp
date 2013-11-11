@@ -12,12 +12,12 @@
 
 #include <string>
 #include <iostream>
-#include "graph/gfd/nodeGFD.hpp"
+#include "graph/dfg/nodeDFG.hpp"
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/directed_graph.hpp>
 
 struct Node {
-    graph::NodeGFD node;
+    graph::NodeDFG node("test");
 };
 
 /*struct Node {
