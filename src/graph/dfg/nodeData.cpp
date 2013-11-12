@@ -18,24 +18,8 @@ namespace graph{
     std::string NodeData::toString(){
         std::string ret = "name: ";
         ret.append(m_name);
-        std::string kindData;
-        switch(m_kindData){
-        case INPUT:
-           kindData = "INPUT";
-           break;
-        case OUTPUT:
-           kindData = "OUTPUT";
-           break;
-        case VARIABLE:
-           kindData = "VARIABLE";
-           break;
-        default:
-            std::cerr << "Error: A data node have not a valid kind attribute" << std::endl;
-            exit(EXIT_FAILURE);
-            break;
-        }
         ret.append("Kind: ");
-        ret.append(kindData);
+        ret.append(tools::kindNodeDataToString(m_kindData));
         ret.append(" dfgid: ");
         ret.append(tools::numberToString(m_dataid));
         return ret; 

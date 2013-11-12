@@ -12,9 +12,14 @@
 #define __TOOLS_HPP__
 
 #include <string>
+#include "graph/dfg/nodeData.hpp"
+#include "graph/dfg/nodeOperator.hpp"
 
 namespace tools {
     template <class T> std::string numberToString(T number);
+
+    std::string kindNodeDataToString(graph::NodeData::eKindNodeData kindData);
+    std::string kindNodeOperatorToString(graph::NodeOperator::eKindNodeOperator kindOperator);
 }
 
 #endif

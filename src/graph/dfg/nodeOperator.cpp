@@ -8,9 +8,21 @@
  */
 
 #include "graph/dfg/nodeOperator.hpp"
+#include <string>
 
+#include "utils/tools.hpp"
 
 namespace graph{
+    
+    std::string NodeOperator::toString(){
+        std::string ret = m_name;
+        ret.append(":");
+        ret.append(tools::kindNodeOperatorToString(m_kindOp));
+        ret.append(":");
+        ret.append(tools::numberToString(m_opid));
+        return ret; 
+    }
+
     bool NodeOperator::isAddition(){
         if(m_kindOp == NodeOperator::ADD)
             return true;
