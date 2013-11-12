@@ -29,10 +29,16 @@ namespace graph{
                 || std::is_same<T, double>::value, "NodeConstant template class can only used int, double or float data type");
 
         private:
-            T m_value; 
+            T m_value; /**< @brief value of the constanta */
 
         public:
+            /**
+             * @brief constructor
+             * @param value : value of the constant
+             */
             NodeConstant(T value):NodeDFG("constant"), m_value(value){}
+
+            T getValue(){return m_value;} /**< @brief getter of the value */
 
             std::string toString(){
                 std::string ret(m_name);

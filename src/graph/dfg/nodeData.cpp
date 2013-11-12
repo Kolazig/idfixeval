@@ -37,7 +37,28 @@ namespace graph{
         ret.append("Kind: ");
         ret.append(kindData);
         ret.append(" dfgid: ");
-        ret.append(tools::numberToString(m_dfgid));
+        ret.append(tools::numberToString(m_dataid));
         return ret; 
+    }
+
+    bool NodeData::isInput(){
+        if(m_kindData == NodeData::INPUT)
+            return true;
+        else
+            return false;
+    }
+
+    bool NodeData::isOutput(){
+        if(m_kindData == NodeData::OUTPUT)
+            return true;
+        else
+            return false;
+    }
+
+    bool NodeData::isVariable(){
+        if(m_kindData == NodeData::VARIABLE)
+            return true;
+        else
+            return false;
     }
 }
